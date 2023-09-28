@@ -1,0 +1,78 @@
+[gd_resource type="Theme" load_steps=11 format=2]
+
+[ext_resource path="res://Assets/Buttons/UI_Paper_Dropdown_Handle.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Fonts/Roboto-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Buttons/Spritesheet_UI_Paper.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
+[sub_resource type="StyleBoxTexture" id=4]
+texture = ExtResource( 3 )
+region_rect = Rect2( 32, 160, 96, 32 )
+expand_margin_left = 30.0
+expand_margin_right = 30.0
+modulate_color = Color( 0.835294, 0.835294, 0.835294, 1 )
+
+[sub_resource type="StyleBoxTexture" id=3]
+texture = ExtResource( 3 )
+region_rect = Rect2( 32, 160, 96, 32 )
+expand_margin_left = 30.0
+expand_margin_right = 30.0
+
+[sub_resource type="StyleBoxTexture" id=5]
+texture = ExtResource( 3 )
+region_rect = Rect2( 32, 160, 96, 32 )
+expand_margin_left = 30.0
+expand_margin_right = 30.0
+
+[sub_resource type="DynamicFont" id=6]
+size = 50
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxTexture" id=7]
+texture = ExtResource( 3 )
+region_rect = Rect2( 32, 36, 96, 92 )
+expand_margin_left = 30.0
+expand_margin_right = 30.0
+expand_margin_top = 15.0
+expand_margin_bottom = 20.0
+
+[resource]
+OptionButton/colors/font_color = Color( 0, 0, 0, 1 )
+OptionButton/colors/font_color_disabled = Color( 0, 0, 0, 1 )
+OptionButton/colors/font_color_focus = Color( 0, 0, 0, 1 )
+OptionButton/colors/font_color_hover = Color( 0, 0, 0, 1 )
+OptionButton/colors/font_color_pressed = Color( 0, 0, 0, 1 )
+OptionButton/constants/arrow_margin = 20
+OptionButton/constants/hseparation = 0
+OptionButton/fonts/font = SubResource( 1 )
+OptionButton/icons/arrow = ExtResource( 1 )
+OptionButton/styles/disabled = null
+OptionButton/styles/focus = SubResource( 8 )
+OptionButton/styles/hover = SubResource( 4 )
+OptionButton/styles/normal = SubResource( 3 )
+OptionButton/styles/pressed = SubResource( 5 )
+PopupMenu/colors/font_color = Color( 0, 0, 0, 1 )
+PopupMenu/colors/font_color_accel = Color( 0, 0, 0, 1 )
+PopupMenu/colors/font_color_disabled = Color( 0, 0, 0, 1 )
+PopupMenu/colors/font_color_hover = Color( 0, 0, 0, 1 )
+PopupMenu/colors/font_color_separator = Color( 0, 0, 0, 1 )
+PopupMenu/constants/hseparation = 0
+PopupMenu/constants/vseparation = 0
+PopupMenu/fonts/font = SubResource( 6 )
+PopupMenu/fonts/font_separator = null
+PopupMenu/icons/checked = null
+PopupMenu/icons/radio_checked = null
+PopupMenu/icons/radio_unchecked = null
+PopupMenu/icons/submenu = null
+PopupMenu/icons/unchecked = null
+PopupMenu/styles/hover = null
+PopupMenu/styles/labeled_separator_left = null
+PopupMenu/styles/labeled_separator_right = null
+PopupMenu/styles/panel = SubResource( 7 )
+PopupMenu/styles/panel_disabled = null
+PopupMenu/styles/separator = null

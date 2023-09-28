@@ -2,7 +2,7 @@ const HAIR_LIST = {
 	
 	0: ["Hair", "res://Assets/Parts/Hair/z-default_hair.PNG"],
 	1: ["Charles le Lion", "res://Assets/Parts/Hair/Charles.PNG"],
-	2: ["Train Conductor Sara", "res://Assets/Parts/Hair/Sarah.PNG"],
+	2: ["Train Conductor Sarah", "res://Assets/Parts/Hair/Sarah.PNG"],
 }
 
 const EYES_LIST = {
