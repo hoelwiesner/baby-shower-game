@@ -14,10 +14,11 @@ var nose_i : int = 0
 var mouth_i : int = 0
 var outfit_i : int = 0
 
-var rng = RandomNumberGenerator.new()
+var rng
 
 func _ready():
-	pass
+	rng = RandomNumberGenerator.new()
+	rng.randomize()
 
 func hair_reload():
 	$Baby/Hair.texture = load(parts.HAIR_LIST[hair_i][1])

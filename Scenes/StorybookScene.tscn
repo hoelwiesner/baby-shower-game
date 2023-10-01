@@ -12,7 +12,9 @@
 [ext_resource path="res://Assets/gui_themes/next_buttons.tres" type="Theme" id=10]
 
 [sub_resource type="DynamicFont" id=2]
-size = 40
+size = 36
+outline_size = 1
+outline_color = Color( 0.870588, 0.870588, 0.870588, 1 )
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -30,8 +32,8 @@ texture = ExtResource( 2 )
 centered = false
 
 [node name="Baby" type="Node2D" parent="."]
-position = Vector2( 380, 457 )
-scale = Vector2( 0.35, 0.35 )
+position = Vector2( 370, 444 )
+scale = Vector2( 0.33, 0.33 )
 
 [node name="Hair" type="Sprite" parent="Baby"]
 z_index = 6

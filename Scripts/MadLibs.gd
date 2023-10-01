@@ -12,6 +12,10 @@ var current_story = stories.STORIES[story_i]
 var size_i : int = 0
 
 func _ready():
+	if story_i == 8:
+		$CenterContainer4/Prompt.text = "Donnez moi un/e..."
+	else:
+		$CenterContainer4/Prompt.text = "Give me a..."
 	InputText.text = current_story.prompts[size_i] + ":"
 	PlayerText.grab_focus()
 	
@@ -57,7 +61,7 @@ func tell_story():
 func _on_Button_pressed():
 	var js_prompt = current_story.prompts[size_i]
 	PlayerText.grab_focus()
-	if OS.has_feature('JavaScript') and OS.has_feature("mobile"):
+	if OS.has_feature('JavaScript') and OS.has_touchscreen_ui_hint():
 		find_node("PlayerText").text = JavaScript.eval("""
 			window.prompt('""" + js_prompt + """')
 		""")

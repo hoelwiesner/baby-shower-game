@@ -5,16 +5,17 @@ const stories = preload("res://Scripts/Stories.gd")
 var story_count = stories.STORIES.size() + 1
 
 onready var story_label = $StorySelect/StoryLabel
+var rng
 
-var rng = RandomNumberGenerator.new()
 var current_selected = 0
 
 func _ready():
-	pass
+	rng = RandomNumberGenerator.new()
+	rng.randomize()
 
 func _on_NextScene_pressed():
 	if current_selected == 0:
-		GlobalVariables.global_story_index = rng.randi_range(1, story_count - 1)
+		GlobalVariables.global_story_index = rng.randi_range(1, story_count - 2)
 	else:
 		GlobalVariables.global_story_index = current_selected
 	get_tree().change_scene("res://Scenes/MadLibs.tscn")
